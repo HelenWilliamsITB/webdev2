@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	font-family: Arial,Helvetica,freesans,sans-serif;
+}
+
+.container{
+	width:1024px; /*Im aiming for a desktop layout hance the larger res than 920px*/
+	margin:auto; /*this sill center the container in the browser window*/
+	height:100vh; /*vh stands for viewport height. I want this to be 100% of the window*/
+}
+
+/* FEATURE1 STYLING*/
+
+/*This is the DIV for the main news story*/
+.feature1{
+	display:inline-block; /*I want to display this as a block*/
+	vertical-align:top; /*I will top align it with other blocks*/
+	color:white; /*any text in this div will be white*/
+	text-shadow: 1px 2px 3px #666; /*Im putting a drop shadow on the div to make it readable*/
+	width:500px; /*the div is 500px wide - Im not too fusy on maths for a mockup*/
+	height:300px;  /*div is 300 high (height I will set the image*/
+	margin-right:10px; /*I want some space between this story and the next so I left white space to the right */
+}
+
+
+/*This is the text for the main story*/
+.feature1text{
+	position:relative; /*Im moving it from where it would have been by default*/
+	top:-170px; /*-170 from the top actually moves it UP 170 pixels over the image*/
+	padding:10px; /*I want some space to the left and right of the text*/
+}
+
+/*This is the DIV for the main news story category (US ELECTION 2016)*/
+.category{
+	position:relative; /*Im moving it from where it would have been by default*/
+	top:-190px; /*move it up 190 pixels*/
+	left:10px;	/*move it in from the left 10 pixels*/
+}
+
+
+/*These are the categories on the other feature stories - placing each one individually*/
+.category1{
+	position:relative;
+	top:-160px;
+	left:10px;	
+}
+
+.category2{
+	position:relative;
+	top:-164px;
+	left:10px;	
+}
+
+.category3{
+	position:relative;
+	top:-165px;
+	left:10px;	
+}
+
+.category4{
+	position:relative;
+	top:-160px;
+	left:10px;	
+}
+
+
+
+/* FEATURE2 STYLING*/
+
+/*This is the DIV for the 4 other feature stories */
+.feature2{
+	display:inline-block; /*Again this is an inline block. It will sit beside the main story */
+	vertical-align:top;  /*I will top align it with other blocks*/
+	color:white; /*any text in this div will be white*/
+	text-shadow: 1px 2px 3px #666; /*Im putting a drop shadow on the div to make it readable*/
+	width:500px; /*The DIV is 500px wide - this will mean that two images will fit side by side before gouing to a second line inside this div (images < 250px each)*/
+	height:300px; /*The DIV is 300px wide*/
+} 
+
+
+.feature2text{
+	position: relative; 
+   	top: -140px;  
+	padding:10px;
+}
+
+.feature2story{
+	display:inline-block;
+	vertical-align:top;
+	width:245px;
+	height:145px;
+}
+
+.padRight{
+	margin-right:5px;
+}
+
+
+
+/* Substories */
+
+/*this is the container div for the sub stories */
+.substories{ 
+	width:100%;
+	margins:auto;
+}
+
+/*this is the container div for each opf the three substories */
+.substory{
+	display:inline-block;
+	vertical-align:top;
+	width:313px;
+	color:black;
+	margin-left:10px;
+	margin-right:10px;
+	overflow:hidden;
+}
+
+
+/* Text Styles */
+
+h1{
+	font-size:24px;		
+}
+
+h2{
+	font-size:20px;		
+}
+
+h3{
+	font-size:16px;		
+}
+
+h4{
+	font-size:12px;		
+}
+
+
+/* DATE STYLING*/
+.date{
+	font-size:24px;
+	font-weight: bold;
+	color:#4a4a4a;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+/* NAVBAR STYLING*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+	
+}
+
+li {
+    float: left;
+}
+
+li img {
+    margin-top: 10px;
+	margin-left: 3px;
+	margin-right:15px;
+	
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	border-left: solid 1px #817E7E;
+}
+
+li a:hover:not(.active) {
+    background-color: #3C3C3C;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
